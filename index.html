@@ -3,86 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Gym Hub</title>
+    <title>Home — Gym Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <a href="index.html" class="nav-brand">
+            <img src="img/sampleLogo.png" alt="Logo">
+            <span class="nav-brand-name">Gym<span>Hub</span></span>
+        </a>
         <nav>
             <ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="information.html">Information</a></li>
-				<li><a href="resources.html">Resources</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="feedback.html">Feedback</a></li>
-			</ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
         </nav>
+        <div class="nav-footer">
+            <a href="login.html">Sign In</a>
+        </div>
     </header>
     <main>
         <div class="title">
-            <img src="img/sampleLogo.png" alt="Logo">
-            <h1>Gym Hub</h1>
+            <div class="title-lockup">
+                <h1>Choose Your <span>Split</span></h1>
+            </div>
+            <p class="title-tagline">Select a workout program to get started</p>
         </div>
-        <article>
-            <div class="image-row">
-                <figure>
-                    <a href="push-split.html">
-                    <img src="img/push-split.jpg" alt="push-split">
-                    </a>
-                        <figcaption>
-                            <p>
-                                Push Split
-                            </p>
-                        </figcaption>
-                </figure>
-                <figure>
-                    <a href="pull-split.html">
-                    <img src="img/pull-split.jpg" alt="pull-split">
-                    </a>    
-                        <figcaption>
-                            <p>
-                                Pull Split
-                            </p>
-                        </figcaption>
-                </figure>
-                <figure>
-                    <a href="leg-split.html">
-                    <img src="img/leg-split.jpg" alt="leg-split">
-                    </a>
-                        <figcaption>
-                            <p>
-                                Leg Split
-                            </p>
-                        </figcaption> 
-                </figure>
-            </div>
-            <div class="image-row">
-                <figure>
-                    <a href="upper-body.html">
-                    <img src="img/upper-body.png" alt="">
-                    </a>
-                        <figcaption>
-                            <p>
-                                Upper Body Split
-                            </p>
-                        </figcaption>
-                </figure>
-                <figure>
-                    <a href="lower-body.html">
-                    <img src="img/lower-body.png" alt="">
-                    </a>
-                        <figcaption>
-                            <p>
-                                Lower Body Split
-                            </p>
-                        </figcaption> 
-                </figure>
-            </div>
-        </article>
-    </main>
-    <footer>
 
-    </footer>
+        <div class="splits-grid">
+            <figure class="split-card">
+                <a href="push-split.html">
+                    <img src="img/push-split.jpg" alt="Push Split">
+                    <figcaption><p>Push Split</p></figcaption>
+                </a>
+            </figure>
+            <figure class="split-card">
+                <a href="pull-split.html">
+                    <img src="img/pull-split.jpg" alt="Pull Split">
+                    <figcaption><p>Pull Split</p></figcaption>
+                </a>
+            </figure>
+            <figure class="split-card">
+                <a href="leg-split.html">
+                    <img src="img/leg-split.jpg" alt="Leg Split">
+                    <figcaption><p>Leg Split</p></figcaption>
+                </a>
+            </figure>
+            <figure class="split-card">
+                <a href="upper-body.html">
+                    <img src="img/upper-body.png" alt="Upper Body Split">
+                    <figcaption><p>Upper Body Split</p></figcaption>
+                </a>
+            </figure>
+            <figure class="split-card">
+                <a href="lower-body.html">
+                    <img src="img/lower-body.png" alt="Lower Body Split">
+                    <figcaption><p>Lower Body Split</p></figcaption>
+                </a>
+            </figure>
+        </div>
+    </main>
+    <footer></footer>
 </body>
 </html>

@@ -3,34 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Gym Hub</title>
+    <title>Sign In — Gym Hub</title>
     <link rel="stylesheet" href="login-style.css">
 </head>
 <body>
-    <header>
-
-    </header>
     <main>
+        <div class="login-brand">
+            <a href="index.html">
+                <img src="img/sampleLogo.png" alt="Logo">
+                <span class="login-brand-name">Gym<span>Hub</span></span>
+            </a>
+        </div>
         <article class="container">
-            <h1>Login</h1>
+            <h1>Sign In</h1>
             <form action="index.html">
                 <fieldset>
                     <legend>Account Details</legend>
                     <div class="form-group">
-                        <label class="label-block" for="Username">Username</label>
-                        <input type="email" name="username" id="username" placeholder="Enter your username" required>
+                        <label class="label-block" for="username">Email Address</label>
+                        <input type="email" name="username" id="username" placeholder="you@example.com" required>
                     </div>
                     <div class="form-group">
-                        <label for="Password" class="label-block">Password</label>
-                        <input type="password" name="password" id="password" placeholder="***********" required>
+                        <label for="password" class="label-block">Password</label>
+                        <input type="password" name="password" id="password" placeholder="••••••••••" required>
                     </div>
                 </fieldset>
-                <button type="submit" class="button">Sign up</button>
+                <button type="submit" class="button">Sign In</button>
             </form>
         </article>
+        <p class="login-back">Don't have an account? <a href="index.html">Browse as guest</a></p>
     </main>
-    <footer>
-        
-    </footer>
 </body>
 </html>
