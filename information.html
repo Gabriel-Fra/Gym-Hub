@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <header>
+    <header>
         <a href="index.html" class="nav-brand">
-            <img src="img/sampleLogo.png" alt="Logo">
+            <img src="img/logo.png" alt="Logo">
             <span class="nav-brand-name">Gym<span>Hub</span></span>
         </a>
         <nav>
@@ -17,7 +17,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="information.html">Information</a></li>
-                <li><a href="resources.html">Resources</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="feedback.html">Feedback</a></li>
             </ul>
@@ -28,12 +27,57 @@
     </header>
     <main>
         <div class="page-title"><h1>Gym <em>Info</em></h1></div>
-        <figure class="gym-image">
-            <img src="img/gym-image.jpeg" alt="gym-image">
-        </figure>
-    </main>
-    <footer>
 
-    </footer>
+        <figure class="gym-image">
+            <img src="img/gym-image.jpeg" alt="Gym interior" usemap="#gymmap">
+            <map name="gymmap">
+                <area shape="rect" coords="0,0,233,420"   href="#reception" alt="Reception & Entrance" title="Reception & Entrance">
+                <area shape="rect" coords="233,0,467,420" href="#floor"      alt="Training Floor"       title="Training Floor">
+                <area shape="rect" coords="467,0,700,420" href="#equipment"  alt="Equipment Area"       title="Equipment Area">
+            </map>
+        </figure>
+
+        <div class="gym-info">
+            <h2>Location</h2>
+            <p>2F Eton Tower V.A. Rufino, cor Dela Rosa Street<br>Legazpi Village, Makati City<br>1229 Metro Manila, Philippines</p>
+        </div>
+
+        <!-- modals — shown via :target when image map area is clicked -->
+
+        <div class="area-modal" id="reception">
+            <div class="area-modal-box">
+                <a href="#" class="area-modal-close">✕</a>
+                <img src="img/gym-image.jpeg" alt="Reception & Entrance">
+                <div class="area-modal-body">
+                    <h2>Reception & Entrance</h2>
+                    <p>Check in at the front desk, pick up your access card, and get a quick orientation from our staff. Our team is here to help with anything you need before you hit the floor. Open 5am–11pm daily.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="area-modal" id="floor">
+            <div class="area-modal-box">
+                <a href="#" class="area-modal-close">✕</a>
+                <img src="img/push-split.jpg" alt="Training Floor">
+                <div class="area-modal-body">
+                    <h2>Training Floor</h2>
+                    <p>Free weights, benches, squat racks, and open space for functional training. The floor is laid out to keep heavy compound lifts separate from accessory work. Plenty of room even during peak hours.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="area-modal" id="equipment">
+            <div class="area-modal-box">
+                <a href="#" class="area-modal-close">✕</a>
+                <img src="img/pull-split.jpg" alt="Equipment Area">
+                <div class="area-modal-body">
+                    <h2>Equipment Area</h2>
+                    <p>Full range of cable machines, plate-loaded equipment, and isolation stations. Everything is maintained weekly and regularly serviced. If a machine is out of order, staff will know about it before you do.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer></footer>
 </body>
 </html>
